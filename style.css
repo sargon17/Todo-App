@@ -1,0 +1,96 @@
+html{
+    background-color: #2F2F2F;
+    color: #2f2f2f;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    /* border: #000 solid 1px; */
+    /* max-width: 400px; */
+    min-width: 300px;
+    /* max-height: 300px; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #d9ae61;
+}
+.flex{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+input{
+    background-color: #d9ae61;
+    border: #2F2F2F solid 1px;
+    border-right: none;
+}
+
+button{
+    background-color: #d9ae61;
+    height: 20px;
+    border: none;
+    padding: 0 1rem;
+    border: #2f2f2f solid 1px;
+    border-left: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #c29d59;
+}
+
+ul{
+    border-top: solid #2f2f2f 1px;
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+li{
+    cursor: pointer;
+    padding: 5px;
+    justify-content: space-between;
+    align-content: center;
+}
+li:nth-child(2n){
+    background-color: #c29d59;
+}
+li p{
+    margin: 0;
+}
+.made{
+    color:#8d723f;
+    text-decoration: line-through;
+}
+li button{
+    background-color: inherit;
+    border: none;
+    /* padding: 5px; */
+    color: #8d723f;
+}
+li button:hover{
+    background-color: transparent;
+}
+
+.cancel__wrapper{
+    width: 100%;
+}
+.cancelBtn{
+    background-color: #d9ae61;
+    border:none;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
