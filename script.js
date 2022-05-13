@@ -102,11 +102,10 @@ function completeToDo(num) {
 
 text.addEventListener(
   "keydown",
-  function (event) {
-    console.log(event.key);
-    if (event.key == "Enter") {
-      loadMemos();
+  (e) => {
+    if (e.key == "Enter") {
       addMemo();
+      loadMemos();
     }
   },
   false
