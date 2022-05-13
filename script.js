@@ -3,7 +3,7 @@ let text = document.querySelector(".input");
 let memoList = document.querySelector("ul");
 let cancBtn = document.querySelector(".cancelBtn");
 let todo = document.querySelector("li");
-let memos = ["hello", "world", "this is a test"];
+let memos = [];
 let cancLitleBtn = document.querySelector("li button");
 
 toStorage();
@@ -32,6 +32,7 @@ function removeAllChildNodes(parent) {
 }
 function loadMemos() {
   memos = fromStorage();
+  console.log("memos", memos);
   let i = memos.length;
   if (memoList.childElementCount === 0) {
     for (x = 0; x < i; x++) {
@@ -81,8 +82,9 @@ function removeMe(num) {
   memos.splice(num, 1);
   console.log(memos);
   toStorage();
+  loadMemos();
   // memoList.removeChild(num);
-  window.location.reload();
+  //   window.location.reload();
 }
 function showRemoveButton(num) {
   var cancLitleBtn = document.querySelector("#btn" + num);
